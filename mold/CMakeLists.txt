@@ -20,8 +20,7 @@ check_type_size(int      SIZEOF_INT)
 check_type_size(float    SIZEOF_FLOAT)
 check_type_size(double   SIZEOF_DOUBLE)
 
-add_definitions(-fPIC)
-add_library(molder ${MOLDER} ${MOLDER_PLUGIN})
+add_library(molder STATIC ${MOLDER} ${MOLDER_PLUGIN})
 
 ########################################################
 ## Test cases

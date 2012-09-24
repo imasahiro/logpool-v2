@@ -14,4 +14,8 @@ SET(CMAKE_CXX_FLAGS_RELEASE "-Wall -O2 -g")
 SET(CMAKE_CXX_FLAGS_DEBUG   "-Wall -O0 -g3")
 
 enable_testing()
+
+add_subdirectory(kjson)
 add_subdirectory(mold)
+#add_subdirectory(stream)
+add_subdirectory(logpool)
